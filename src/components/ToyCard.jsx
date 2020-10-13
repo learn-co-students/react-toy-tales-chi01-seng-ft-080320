@@ -12,7 +12,7 @@ class ToyCard extends Component {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({likes :this.props.toy.likes += 1})
+      body: JSON.stringify({likes : this.props.toy.likes += 1})
     }
     fetch(`http://localhost:3000/toys/${this.props.toy.id}`, reqObj)
 
